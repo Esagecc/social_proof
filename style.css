@@ -34,7 +34,6 @@ body {
 
 .first h1 {
     color: var(--dk-magenta);
-    /* width: 320px; */
     font-size: 40px;
     font-weight: 700;
     letter-spacing: -1px;
@@ -107,16 +106,121 @@ body {
     z-index: -1;
 }
 
-.img-bot-mob {
+.img-desk-top {
+    display: none;
+}
+
+.img-mob-bot {
     position: absolute;
     bottom: 0;
     z-index: -2;
 }
 
+.img-desk-bot {
+    display: none;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding-bottom: 20px;
   }
   .attribution a {
     color: hsl(228, 45%, 44%);
+  }
+
+  @media (min-width:500px) {
+    .top-desktop {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    .main {
+        width: 1100px;
+        margin: 120px auto;
+    }
+    .first {
+        width: 40%;
+        text-align: left;
+    }
+
+    .first h1 {
+        font-size: 50px;
+        width: 70%;
+        line-height: 45px;
+    }
+
+    .second {
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        padding: 14px 30px;
+        /* margin: 10px; */
+        align-items: center;
+    }
+
+    .card-one {
+        margin: 10px 0;
+    }
+
+    .card-two {
+        margin: 0 40px;
+    }
+
+    .card-three {
+        margin: 10px 0 0 80px;
+    }
+    .stars {
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    .third {
+        display:flex;
+        gap: 24px;
+    }
+
+    .card-client {
+        height: 240px;
+    }
+    .card-client-two {
+        margin-top: 20px;
+    }
+
+    .card-client-three {
+        margin-top: 40px;
+    }
+    
+    .img-mob-top {
+        display: none;   
+    }
+
+    .img-desk-top {
+        display:block;
+        position:absolute;
+        top: 0;
+        left: 25px;
+        z-index: -1;
+    }
+
+    .img-mob-bot {
+        display: none;
+    }
+
+    .img-desk-bot {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -3;
+    }
+
+
   }
